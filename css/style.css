@@ -68,7 +68,7 @@ padding-bottom: 25px;
     display: flex;
 }
 
-.header-list:not(:last-child){
+.header-item:not(:last-child){
     margin-right: 50px;
 }
 .header-link{

@@ -67,6 +67,10 @@ padding-bottom: 25px;
 .header-list{
     display: flex;
 }
+
+.header-list:not(:last-child){
+    margin-right: 50px;
+}
 .header-link{
 font-family: Raleway;
 font-size: 26px;

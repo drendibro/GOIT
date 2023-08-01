@@ -10,6 +10,25 @@ body {
 font-family: Roboto, Tahoma, sans-serif;
 }
 
+
+
+
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+ol,ul{
+padding-left: 0;
+margin: 0;
+}
+
+img{
+    display: block;
+}
+
+button{
+    cursor: pointer;
+}
 .link {
     text-decoration: none;
 }
@@ -17,13 +36,44 @@ font-family: Roboto, Tahoma, sans-serif;
 .list{
     list-style: none;
 }
-/*-------------------HEADER---------*/
+/*-------------------HEADER---------*/ 
+.header{
+padding-top: 24px;
+padding-bottom: 25px;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.header .container{
+    display: flex;
+}
+
+.header-navigation{
+    display: flex;
+    align-items: center;
+}
+
+.hero-container{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+}
+
+.header-list{
+    display: flex;
+}
 .header-link{
 font-family: Raleway;
 font-size: 26px;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 0.78px;
+margin-right: 93px;
 }
 
 .header-link-first{
@@ -34,6 +84,10 @@ letter-spacing: 0.78px;
     color: #212121;
 }
 
+
+.header-list:not(:last-child){
+    margin-right: 50px;
+}
 .header-item-link{
 font-size: 14px;
 font-weight: 500;
@@ -44,6 +98,12 @@ color: var(--header-color);
 
 .header-item-link:hover{
     color: var(--accent-color);
+}
+
+.header-address{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .header-mail{
@@ -63,8 +123,15 @@ font-weight: 500;
 line-height: normal;
 letter-spacing: 0.28px;
 color: #757575;
+margin-left: 50px;
 }
 /*-----------------------MAIN------------------------*/
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero{
     background-color: #212121;
 }
@@ -75,7 +142,14 @@ line-height: 1.36;
 letter-spacing: 2.64px;
 text-transform: uppercase;
 color: var(--title-color);
+max-width: 696px;
+margin-bottom:30px;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
 }
+
 .hero-btn{
 font-size: 16px;
 font-weight: 700;
@@ -83,8 +157,23 @@ line-height: 1.85;
 letter-spacing: 0.96px;
 color: #ffffff;
 background-color: #2196F3;
+padding: 10px 32px;
 }
 /*--------------------ABOUT--------------*/
+.about .container{
+    display: flex;
+    
+}
+.about{
+    padding:94px 215px;
+}
+.about-list:not(:last-child){
+margin-right: 30px ;
+}
+/*.about-item{
+    margin-right: 30px;
+}
+*/
 .about-title{
 font-size: 14px;
 font-weight: 700;
@@ -92,6 +181,7 @@ line-height: normal;
 letter-spacing: 0.42px;
 text-transform: uppercase;
 color: var(--second-title-color);
+margin-bottom: 10px;
 }
 
 .about-text{
@@ -102,12 +192,18 @@ letter-spacing: 0.42px;
 color: var(--text-color);
 }
 
+
+/*---------------------------process----------------*/
+.process{
+    padding-bottom: 94px;
+}
 .process-title{
 font-size: 36px;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 1.08px;
 color: var(--second-title-color);
+margin-bottom: 50px;
 }
 .team-title{
 font-size: 36px;
@@ -115,6 +211,7 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 1.08px;
 color: var(--second-title-color);
+margin-bottom: 50px;
 }
 
 .team-title-second{
@@ -123,6 +220,7 @@ font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
 color: var(--second-title-color);
+margin-bottom: 10px ;
 }
 
 .team-text{
@@ -135,7 +233,9 @@ color: var(--second-title-color);
 
 /*---------------FOOTRER----------*/
 footer{
-    background-color: #2F303A;;
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px; 
 }
 .footer-link {
 font-family: Raleway;
@@ -143,6 +243,9 @@ font-size: 26px;
 font-weight: 700;
 line-height: normal;
 letter-spacing: 0.78px;
+}
+.footer-link-span{
+    margin-bottom: 20px;
 }
 
 .footer-link-first {
@@ -159,6 +262,7 @@ font-weight: 400;
 line-height: 1.71; 
 letter-spacing: 0.42px;
 color: #ffffff;
+margin-bottom: 9px;
 }
 
 .footer-mail{
@@ -175,4 +279,12 @@ font-weight: 400;
 line-height: 1.71; 
 letter-spacing: 0.42px;
 color: var(--text-color);
+}
+
+.footer-address{
+    display: block;
+}
+
+.footer-item:first-child{
+    margin-bottom: 9px;
 }

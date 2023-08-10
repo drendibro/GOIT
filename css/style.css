@@ -166,6 +166,7 @@ padding: 10px 32px;
 /*--------------------ABOUT--------------*/
 .about .container{
     display: flex;
+    flex-direction: column;
     
 }
 .about{
@@ -174,7 +175,29 @@ padding: 10px 32px;
 .about-list:not(:last-child){
 margin-right: 30px ;
 }
+.about-photo-list{
+    display: flex;
+    flex-direction: row;
+}
 
+.about-list{
+    display: flex;
+    flex-direction: row;
+}
+.about-button-icon{
+    width: 270px;
+    height: 120px;
+}
+.about-photo-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.about-item{
+    margin-top: 30px;
+}
+.about-item:not(:last-child){
+    margin-right: 30px;
+}
 .about-title{
 font-size: 14px;
 font-weight: 700;
@@ -191,7 +214,9 @@ font-weight: 400;
 line-height: 1.71; 
 letter-spacing: 0.42px;
 color: var(--text-color);
+min-width: 72px;
 }
+
 
 
 /*---------------------------process----------------*/
@@ -228,6 +253,14 @@ text-align: center;
     display: flex;
     flex-direction: column;
 }
+.team-link{
+    display: flex; 
+    flex-direction: row; 
+}
+.team-social-link{
+    width: 44px;
+    height: 44px;
+}
 .team-title{
 font-size: 36px;
 font-weight: 700;
@@ -242,7 +275,10 @@ text-align: center;
     border-radius: 0px 0px 4px 4px;
 background: #FFF;
 /* material shadow v1 */
+
 box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+display: flex;  
+flex-direction: column;
 }
 .team-item:not(:last-child){
     margin-right: 30px;

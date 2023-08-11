@@ -178,15 +178,10 @@ margin-right: 30px ;
 }
 .about-photo-list{
     display: flex;
-    flex-direction: row;
 }
 
-.about-list{
-    display: flex;
-    flex-direction: row;
-}
 .about-button-icon{
-    width: 270px;
+    width: 250px;
     height: 120px;
 }
 .about-photo-item:not(:last-child){
@@ -207,6 +202,7 @@ letter-spacing: 0.42px;
 text-transform: uppercase;
 color: var(--second-title-color);
 margin-bottom: 10px;
+margin-top: 10px;
 }
 
 .about-text{
@@ -259,8 +255,8 @@ text-align: center;
     flex-direction: row; 
 }
 .team-social-link{
-    width: 44px;
-    height: 44px;
+    width: 20px;
+    height: 20px;
 }
 .team-title{
 font-size: 36px;
@@ -311,6 +307,62 @@ text-align: center;
     text-align: center;
 }
 
+.team-list-second{
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.team-social-link:hover{
+    fill:white;
+}
+
+
+.team-social-link:hover{
+    width: 44px;
+    height: 44px;
+    background-color: var(--accent-color);
+    border-radius: 50%; 
+}
+
+
+.team-item-link:not(:last-child){
+    margin-right: 34px;
+}
+/* ----------------client-------------- */
+
+.client-list{
+    display: flex;
+
+}
+.client-title{
+    padding-top: 94px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+}
+.client-icon{
+    width: 106px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid #AFB1B8;
+    padding: 5px 15px;
+}
+
+.client-item{
+    padding-bottom: 94px;
+}
+.client-item:first-child{
+    margin-left: 215px;
+}
+.client-item:not(:last-child){
+    margin-right: 30px;
+}
 /*---------------FOOTRER----------*/
 footer{
     background-color: #2F303A;
@@ -368,3 +420,11 @@ color: var(--text-color);
 .footer-item:first-child{
     margin-bottom: 9px;
 }
+
+.footer-title{
+    color: var(--title-color);
+}
+.footer-social-link{
+    display: flex;
+}
+

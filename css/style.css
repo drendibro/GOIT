@@ -428,3 +428,6 @@ color: var(--text-color);
     display: flex;
 }
 
+.footer-listaddress{
+display: flex;
+}

@@ -429,5 +429,9 @@ color: var(--text-color);
 }
 
 .footer-listaddress{
-display: flex;
+    display: flex;
+}
+
+.footer-address-item{
+    
 }

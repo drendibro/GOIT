@@ -433,5 +433,6 @@ color: var(--text-color);
 }
 
 .footer-address-item{
-    
+    display: flex;
+    flex-direction: column;
 }

@@ -137,7 +137,11 @@ margin-left: 50px;
     align-items: center;
 }
 
-.hero{
+
+.hero {
+    background-image: url(/photo/background-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: #212121;
 }
 .hero-title{
@@ -426,8 +430,36 @@ color: var(--text-color);
 }
 .footer-social-link{
     display: flex;
+    flex-direction: column;
+    margin-left: 70px;
 }
 
+.footer-social:hover{
+    width: 44px;
+    height: 44px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+.footer-social{
+    width: 20px;
+    height: 20px;
+}
+
+.footer-item-link{
+    margin-top: 20px;
+}
+
+.footer-item-link:not(:last-child){
+    margin-right: 30px;
+}
+/* .footer-list{
+    display: flex;
+} */
+
+.footer-item-second{
+    display: flex;
+}
 .footer-listaddress{
     display: flex;
 }
@@ -436,3 +468,5 @@ color: var(--text-color);
     display: flex;
     flex-direction: column;
 }
+
+

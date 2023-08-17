@@ -461,6 +461,7 @@ color: var(--text-color);
 } 
 .footer-list{
     display: flex;
+    flex-direction: column;
 } 
 
 .footer-item-second{

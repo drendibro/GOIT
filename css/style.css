@@ -167,7 +167,7 @@ letter-spacing: 0.96px;
 color: #ffffff;
 background-color: #2196F3;
 padding: 10px 32px;
-}
+} 
 /*--------------------ABOUT--------------*/
 .about .container{
     display: flex;
@@ -274,13 +274,13 @@ text-align: center;
 .team-item{
     padding-bottom: 30px;
     border-radius: 0px 0px 4px 4px;
-background: #FFF;
+background: #FFF; 
 /* material shadow v1 */
-
-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+box-shadow : 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 display: flex;  
 flex-direction: column;
 }
+
 .team-item:not(:last-child){
     margin-right: 30px;
 }
@@ -319,16 +319,27 @@ text-align: center;
     align-items: center;
 }
 
-
-
-.team-social-link:hover{
-    width: 44px;
+.team-link{
+    width:44px;
     height: 44px;
-    background-color: var(--accent-color);
     border-radius: 50%;
-     
+    background-color:var(--title-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.team-svg{
+    fill: #AFB1B8;
+}
+
+.team-link:hover{
+    background-color: #2196F3;
+}
+
+.team-link:hover .team-svg{
+    fill: #FFFFFF;
+}
 
 .team-item-link:not(:last-child){
     margin-right: 10px;
@@ -367,6 +378,7 @@ text-align: center;
     margin-right: 30px;
 }
 /*---------------FOOTRER----------*/
+
 footer{
     background-color: #2F303A;
     padding-top: 60px;
@@ -433,12 +445,7 @@ color: var(--text-color);
     margin-left: 70px;
 }
 
-.footer-social:hover{
-    width: 44px;
-    height: 44px;
-    background-color: var(--accent-color);
-    border-radius: 50%;
-}
+
 
 .footer-social{
     width: 20px;
@@ -451,10 +458,10 @@ color: var(--text-color);
 
 .footer-item-link:not(:last-child){
     margin-right: 30px;
-}
-/* .footer-list{
+} 
+.footer-list{
     display: flex;
-} */
+} 
 
 .footer-item-second{
     display: flex;
@@ -466,6 +473,27 @@ color: var(--text-color);
 .footer-address-item{
     display: flex;
     flex-direction: column;
+}
+.footer-list-second{
+    display: flex;
+}
+ 
+.footer-link-svg{
+    width: 44px;
+    height: 44px;
+    background-color: #43444D;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-svg{
+    fill: #ffffff;
+}
+
+.footer-link-svg:hover{
+    background-color: #2196F3;
 }
 
 
